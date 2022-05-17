@@ -41,6 +41,18 @@
         ul~p{
             color:slateblue
         }
+        /*偽類選擇器 */
+        a:hover{
+            color: aquamarine;
+        }
+        /* 偽元素選擇器 */
+        div::after{
+            content: 結束;
+        }
+        /* 群組選擇器 */
+        ul li.ol li {
+            color: aquamarine;
+        }
     </Style>
 </head>
 <body>
@@ -96,5 +108,24 @@
         <p>2</p>
         <p>3</p>
     <hr>
+    <h2>偽類選擇器</h2>
+    <a href="#">偽類選擇器</a>
+    <hr>
+    <h2>偽元素選擇器</h2>
+    <div>
+        測試
+    </div>
+    <hr>
+    <h2>群組選擇器</h2>
+    <ul>
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+    </ul>
+    <ol>
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+    </ol>
 </body>
 </html>
